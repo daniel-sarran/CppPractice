@@ -17,24 +17,12 @@ class AbstractEmployee {
 class Employee : AbstractEmployee {
    public:
     // Getters and setters can be named like variables, snake_case
-    void set_name(string name) {
-        name_ = name;
-    }
-    string name() {
-        return name_;
-    }
-    void set_company(string company) {
-        company_ = company;
-    }
-    string company() {
-        return company_;
-    }
-    void set_age(int age) {
-        age_ = age;
-    }
-    int age() {
-        return age_;
-    }
+    void set_name(string name) { name_ = name; }
+    string name() { return name_; }
+    void set_company(string company) { company_ = company; }
+    string company() { return company_; }
+    void set_age(int age) { age_ = age; }
+    int age() { return age_; }
     // Functions are PascalCase
     void IntroduceYourself() {
         std::cout << "Name - " << name_ << std::endl;
